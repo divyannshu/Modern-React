@@ -8,12 +8,9 @@ const el=document.getElementById('root');
 const root=ReactDOM.createRoot(el);
 //4)Create a component
 function App(){
-  let message='Bye there!';
-  if(Math.random()>0.5)
-    message='Hello there!';
-  const name='Divyanshu';
-  const age=20;
-  return <h1>Hi,my name is {name} and my age is {age}</h1>
+  const inputType='number'
+  const minValue=5; 
+  return <input style={{border:'3px solid red'}} type={inputType} min={minValue}/>
 }
 //5)Show the component on the screen
 root.render(<App/>);
